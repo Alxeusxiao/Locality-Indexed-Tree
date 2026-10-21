@@ -1,0 +1,10 @@
+# 统一用 LF：Makefile / GNU make 与 gcc 在 Windows 上也偏好 LF，
+# 且可避免 clone 后出现"没改却显示已修改"的行尾幻影差异。
+* text=auto eol=lf
+
+*.c            text diff=cpp eol=lf
+*.h            text diff=cpp eol=lf
+*.md           text eol=lf
+Makefile       text eol=lf
+.gitignore     text eol=lf
+.gitattributes text eol=lf
